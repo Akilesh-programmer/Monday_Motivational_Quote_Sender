@@ -16,7 +16,7 @@ random_quote = random.choice(quotes)
 now = dt.datetime.now()
 day_of_week = now.weekday()
 
-if day_of_week == 5:
+if day_of_week == 0:
     connection = smtplib.SMTP("smtp.gmail.com")
     connection.starttls()
     connection.login(user=my_email, password=password)
